@@ -12,9 +12,12 @@ public class MissingNumber {
         	if(i>max)
         		max=i;
         }
+        //max+2 since we have to consider case like 0,1
         int[] arr = new int[max+2];
+        //now, at the nums index of arr increment its value
         for(int i : nums)
         	arr[i]++;
+        //the ones that are not marked will have value as 0 and that is our missing number
         for(int i =0;i<=max+1;i++) {
         	if(arr[i]==0)
         		return i;
