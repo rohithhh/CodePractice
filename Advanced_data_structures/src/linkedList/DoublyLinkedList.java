@@ -24,7 +24,7 @@ public class DoublyLinkedList {
 		DoubleNode head = convertArrToLLAndReturnHeadOptimised(arr);
 	}
 
-	private static DoubleNode convertArrToLLAndReturnHeadOptimised(int[] arr) {
+	static DoubleNode convertArrToLLAndReturnHeadOptimised(int[] arr) {
 		DoubleNode head = new DoubleNode(arr[0]);
 		DoubleNode prev = head;
 		for(int i=1;i<arr.length;i++) {
