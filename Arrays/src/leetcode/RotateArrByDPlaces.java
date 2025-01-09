@@ -4,8 +4,8 @@ import java.util.Arrays;
 //https://leetcode.com/problems/rotate-array/description/
 public class RotateArrByDPlaces {
 	public static void main(String[] args) {
-		int[] arr = {1,2,3,4,5,6,7};
-		rotateLeftOptimised(arr,2);
+		int[] arr = {4,5,6,7,0,1,2};
+		rotateLeftOptimised(arr,4);
 		System.out.println(Arrays.toString(arr));
 	}
 	
