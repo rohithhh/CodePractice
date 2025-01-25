@@ -9,7 +9,7 @@ import java.util.TreeSet;
 
 public class IntersectionOf2Arrays {
 	public static void main(String[] args) {
-		int a[] = {1, 2, 3, 4, 5}, b[] = {1, 2, 3, 6, 7};
+		int a[] = {1, 2, 3, 4, 5}, b[] = {1, 2, 7};
 		System.out.println(findIntersection(a, b));
 	}
 	

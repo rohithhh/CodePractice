@@ -7,21 +7,30 @@ public class MissingNumber {
 	}
 	
 	public static int missingNumber(int[] nums) {
-        int max=Integer.MIN_VALUE;
-        for(int i: nums) {
-        	if(i>max)
-        		max=i;
+		 // Initialize max with the smallest possible integer value
+        int max = Integer.MIN_VALUE;
+        
+        // Find the maximum value in the nums array
+        for (int i : nums) {
+            if (i > max)
+                max = i;
         }
-        //max+2 since we have to consider case like 0,1
-        int[] arr = new int[max+2];
-        //now, at the nums index of arr increment its value
-        for(int i : nums)
-        	arr[i]++;
-        //the ones that are not marked will have value as 0 and that is our missing number
-        for(int i =0;i<=max+1;i++) {
-        	if(arr[i]==0)
-        		return i;
+
+        // Create an array with size max + 2 to handle the missing number at the end
+        int[] arr = new int[max + 2];
+
+        // Mark the numbers present in nums by incrementing the index in arr
+        for (int i : nums) {
+            arr[i]++;
         }
+
+        // Find the first index with value 0, which is the missing number
+        for (int i = 0; i <= max + 1; i++) {
+            if (arr[i] == 0)
+                return i;
+        }
+
+        // Return 0 if no missing number is found (edge case)
         return 0;
     }
 	
