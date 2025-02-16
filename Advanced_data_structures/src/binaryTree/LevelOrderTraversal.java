@@ -15,7 +15,7 @@ public class LevelOrderTraversal {
         
         // Level 2 nodes
         root.left.left = new TreeNode(8);
-        root.left.right = null; // explicitly setting the right child as null
+        root.left.right = new TreeNode(6); // explicitly setting the right child as null
         root.right.left = null; // explicitly setting the left child as null
         root.right.right = new TreeNode(4);
         
