@@ -47,7 +47,7 @@ public class InorderTraversal {
 		        // Now visit the right child
 		        root = root.right;
 		    }
-		    
+		    list.size();
 		    return list;
 	}
 	 
