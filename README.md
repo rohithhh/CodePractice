@@ -1,2 +1,2 @@
 # Arrays
-Sums on arrays in GFG and leetcode
+Sums in GFG and leetcode
